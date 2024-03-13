@@ -1,28 +1,78 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>Adeola Adekoya, Computer Science Major</title>
-	</head>
-	<body>
-		<nav>
-    		<ul>
-        		<li><a href="/">Home</a></li>
-	        	<li><a href="/about">About</a></li>
-        		<li><a href="/cv">CV</a></li>
-        		<li><a href="/blog">Blog</a></li>
-    		</ul>
-		</nav>
-		<div class="container">
-    		<div class="blurb">
-        		<h1>Hi there, I'm Adeola Adekoya!</h1>
-				<p>I'm a senior computer science major. </em> I am super excited to create this website! <a href="/about">Read more about my life...</a></p>
-    		</div><!-- /.blurb -->
-		</div><!-- /.container -->
-		<footer>
-    		<ul>
-        		<li><a href="mailto:deolaomo@gmail.com">email</a></li>
-        		<li><a href="https://github.com/deolaomo">github.com/deolaomo</a></li>
-			</ul>
-		</footer>
-	</body>
-</html
+<head>
+    <title>Adeola Adekoya, Computer Science Major</title>
+    <style>
+        /* CSS styles for the login form */
+        .login-container {
+            width: 300px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+
+        .login-container h2 {
+            text-align: center;
+        }
+
+        .login-container input[type="text"],
+        .login-container input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            box-sizing: border-box;
+        }
+
+        .login-container input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 3px;
+            background-color: #007bff;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        .login-container input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/cv">CV</a></li>
+            <li><a href="/blog">Blog</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="blurb">
+            <h1>Hi there, I'm Adeola Adekoya!</h1>
+            <p>I'm a senior computer science major. </em> I am super excited to create this website! <a href="/about">Read more about my life...</a></p>
+        </div><!-- /.blurb -->
+
+        <!-- Login form -->
+        <div class="login-container">
+            <h2>Login</h2>
+            <form action="/login" method="POST">
+                <input type="text" name="username" placeholder="Username" required>
+                <input type="password" name="password" placeholder="Password" required>
+                <input type="submit" value="Login">
+            </form>
+        </div>
+        <!-- End of login form -->
+    </div><!-- /.container -->
+    <footer>
+        <ul>
+            <li><a href="mailto:deolaomo@gmail.com">email</a></li>
+            <li><a href="https://github.com/deolaomo">github.com/deolaomo</a></li>
+        </ul>
+    </footer>
+</body>
+</html>
